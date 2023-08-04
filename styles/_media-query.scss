@@ -1,0 +1,52 @@
+@media screen and (max-width: 799px) {
+  .hero-text-a {
+    margin-bottom: 4rem;
+  }
+
+  .work-head {
+    display: none;
+  }
+
+  .work {
+    display: block;
+    gap: 0;
+    // grid-template-columns: repeat("auto-fit", minmax(30rem, 1fr));
+  }
+
+  .work img {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .contact {
+    background: rgba(144, 98, 114, 0.3);
+  }
+
+  .contact-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  .main-nav {
+    h4 {
+      text-align: center;
+      padding: 2rem 0rem;
+    }
+
+    ul {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .footer-wrapper {
+    h4 {
+      text-align: center;
+      padding: 2rem 0rem;
+    }
+
+    ul {
+      margin-bottom: 1rem;
+    }
+  }
+}

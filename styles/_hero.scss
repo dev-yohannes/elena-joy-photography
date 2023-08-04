@@ -1,0 +1,64 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 90vh;
+
+  .hero-text {
+    flex: 2 1 40rem;
+    // border: 2px solid red;
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    h2 {
+      padding: 2rem;
+      font-family: "Josefin Sans Bold 700";
+    }
+
+    p {
+      padding: 5rem 3rem;
+      line-height: 1.5;
+      font-family: "Montserrat Light";
+    }
+
+    .hero-text-a {
+      padding: 2rem 8rem;
+      border: 2px solid black;
+      font-family: "Josefin Sans Regular";
+      transition: all 0.5s;
+      &:hover {
+        background: black;
+        color: white;
+      }
+    }
+  }
+
+  .hero-images {
+    flex: 1 1 40rem;
+    // border: 2px solid yellow;
+    background: linear-gradient(#dad8dd, #dad1d4);
+    z-index: -1;
+    position: relative;
+
+    .elena {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .plant1,
+    .plant2 {
+      position: absolute;
+      top: 0%;
+      bottom: 0%;
+      right: 0%;
+      z-index: -1;
+    }
+
+    .plant1 {
+      margin-right: 50rem;
+    }
+  }
+}

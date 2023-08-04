@@ -1,0 +1,37 @@
+$header1: calc(2.5rem + 1vw);
+$header2: calc(3.5rem + 1vw);
+$header3: calc(3rem + 1vw);
+$header4: calc(2.4rem + 1vw);
+$text: calc(1.5rem + 1vw);
+$big: calc(6rem + 1vw);
+$special-color: #906272;
+$background-color: #414141;
+$gray-text: #525252;
+
+@import "global";
+@import "header";
+@import "hero";
+@import "about";
+@import "work";
+@import "contact";
+@import "footer";
+@import "media-query";
+
+// MEDIA QUREY SECTION
+
+@media screen and (min-width: 1700px) {
+  html {
+    $header1: 3rem;
+    $header2: 5rem;
+    $header3: 4rem;
+    $header4: 3rem;
+    $text: 3rem;
+    $big: 8rem;
+  }
+}
+
+// @media screen and (max-width: 799px) {
+//   .hero-text-a {
+//     margin-bottom: 4rem;
+//   }
+// }

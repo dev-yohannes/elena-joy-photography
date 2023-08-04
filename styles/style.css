@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Ruhl Regular";
+  src: url("/fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Ruhl Medium";
+  src: url("/fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Vibes";
+  src: url("/fonts/Great_Vibes/GreatVibes-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("/fonts/Montserrat/static/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: "Josefin Sans Light";
+  src: url("/fonts/Josefin_Sans/static/JosefinSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Josefin Sans Regular";
+  src: url("/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Josefin Sans Bold 700";
+  src: url("/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf");
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: calc(2.5rem + 1vw);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: calc(1.5rem + 1vw);
+}
+
+h2 {
+  font-size: calc(3.5rem + 1vw);
+}
+
+p {
+  font-weight: 100;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: calc(3rem + 1vw);
+}
+
+h4,
+h5 {
+  font-size: calc(2.4rem + 1vw);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  font-family: "Ruhl";
+  -webkit-animation: opening 1s ease-in-out;
+          animation: opening 1s ease-in-out;
+  position: relative;
+}
+
+h1 {
+  font-family: "Vibes", sans-serif;
+  font-weight: 100;
+}
+
+.main-header {
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.main-nav {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-nav h4 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  font-family: "Vibes";
+}
+
+.main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  font-family: "Montserrat Light";
+}
+
+.main-nav .burger {
+  display: none;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 90vh;
+}
+
+.hero .hero-text {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
+}
+
+.hero .hero-text h2,
+.hero .hero-text p {
+  text-align: center;
+}
+
+.hero .hero-text h2 {
+  padding: 2rem;
+  font-family: "Josefin Sans Bold 700";
+}
+
+.hero .hero-text p {
+  padding: 5rem 3rem;
+  line-height: 1.5;
+  font-family: "Montserrat Light";
+}
+
+.hero .hero-text .hero-text-a {
+  padding: 2rem 8rem;
+  border: 2px solid black;
+  font-family: "Josefin Sans Regular";
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.hero .hero-text .hero-text-a:hover {
+  background: black;
+  color: white;
+}
+
+.hero .hero-images {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dad8dd), to(#dad1d4));
+  background: linear-gradient(#dad8dd, #dad1d4);
+  z-index: -1;
+  position: relative;
+}
+
+.hero .hero-images .elena {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero .hero-images .plant1,
+.hero .hero-images .plant2 {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  z-index: -1;
+}
+
+.hero .hero-images .plant1 {
+  margin-right: 50rem;
+}
+
+.about {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about .about-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  position: relative;
+}
+
+.about .about-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .about-image h5 {
+  position: absolute;
+  letter-spacing: 2rem;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
+}
+
+.about .about-text {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
+  background: #414141;
+  color: white;
+}
+
+.about .about-text h1 {
+  width: 82%;
+  margin: auto;
+  padding: 3rem 0rem;
+  text-align: center;
+}
+
+.about .about-text .div-wrapper {
+  width: 82%;
+  margin: auto;
+}
+
+.about .about-text .div-wrapper .div1 {
+  margin-bottom: 10rem;
+}
+
+.about .about-text .div-wrapper .div1 h4 {
+  margin: 3rem 0rem;
+  font-family: "Josefin Sans Regular";
+}
+
+.about .about-text .div-wrapper .div1 p {
+  font-family: "Montserrat Light";
+}
+
+.about .about-text .div-wrapper .div2 {
+  margin-bottom: 10rem;
+}
+
+.about .about-text .div-wrapper .div2 h4 {
+  margin: 3rem 0rem;
+  font-family: "Josefin Sans Regular";
+}
+
+.about .about-text .div-wrapper .div2 p {
+  font-family: "Montserrat Light";
+}
+
+.about .about-text .div-wrapper .div3 {
+  margin-bottom: 10rem;
+}
+
+.about .about-text .div-wrapper .div3 h4 {
+  margin: 3rem 0rem;
+  font-family: "Josefin Sans Regular";
+}
+
+.about .about-text .div-wrapper .div3 p {
+  font-family: "Montserrat Light";
+}
+
+.work {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100vh;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+
+.work .work-head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(65, 65, 65, 0.8);
+  color: white;
+  padding: 6rem 10rem;
+  border-radius: 2rem;
+}
+
+.work .work-head h2 {
+  font-family: "Josefin Sans Regular";
+}
+
+.work .work-head p {
+  font-family: "Montserrat Light";
+}
+
+.work img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.work .img1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.work .img2 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.contact .contact-text-form {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
+}
+
+.contact .contact-text-form .touch {
+  color: #906272;
+  font-size: 9rem;
+}
+
+.contact .contact-text-form .form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .contact-text-form .form-wrapper label {
+  font-family: "Josefin Sans Regular";
+  margin: 5rem 0rem 2rem 0rem;
+}
+
+.contact .contact-text-form .form-wrapper input {
+  margin-bottom: 2rem;
+  padding: 1rem 0rem;
+  border: none;
+  background: #414141;
+  color: white;
+}
+
+.contact .contact-text-form .form-wrapper button {
+  width: 100%;
+  padding: 1rem 0rem;
+  border: none;
+  background: #906272;
+  color: white;
+  font-family: "Josefin Sans Regular";
+}
+
+.contact .contact-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+}
+
+footer {
+  background: #414141;
+}
+
+footer .footer-wrapper {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-wrapper h4 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
+  color: white;
+  font-family: "Josefin Sans Light";
+}
+
+footer .footer-wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+@media screen and (max-width: 799px) {
+  .hero-text-a {
+    margin-bottom: 4rem;
+  }
+  .work-head {
+    display: none;
+  }
+  .work {
+    display: block;
+    gap: 0;
+  }
+  .work img {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .contact {
+    background: rgba(144, 98, 114, 0.3);
+  }
+  .contact-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  .main-nav h4 {
+    text-align: center;
+    padding: 2rem 0rem;
+  }
+  .main-nav ul {
+    margin-bottom: 1rem;
+  }
+  .footer-wrapper h4 {
+    text-align: center;
+    padding: 2rem 0rem;
+  }
+  .footer-wrapper ul {
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

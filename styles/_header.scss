@@ -1,0 +1,32 @@
+.main-header {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.main-nav {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  h4 {
+    flex: 1 1 40rem;
+    font-family: "Vibes";
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 40rem;
+    font-family: "Montserrat Light";
+  }
+
+  .burger {
+    display: none;
+  }
+}

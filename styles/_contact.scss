@@ -1,0 +1,48 @@
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+
+  .contact-text-form {
+    flex: 2 1 40rem;
+
+    .touch {
+      color: $special-color;
+      font-size: 9rem;
+    }
+
+    .form-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-family: "Josefin Sans Regular";
+        margin: 5rem 0rem 2rem 0rem;
+      }
+
+      input {
+        margin-bottom: 2rem;
+        padding: 1rem 0rem;
+        border: none;
+        background: $background-color;
+        color: white;
+      }
+
+      button {
+        width: 100%;
+        padding: 1rem 0rem;
+        border: none;
+        background: $special-color;
+        color: white;
+        font-family: "Josefin Sans Regular";
+      }
+    }
+  }
+
+  .contact-img {
+    flex: 1 1 10rem;
+    // height: 100%;
+    // width: 100%;
+    // object-fit: cover;
+  }
+}

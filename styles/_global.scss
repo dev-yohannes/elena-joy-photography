@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Ruhl Regular";
+  src: url("/fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Ruhl Medium";
+  src: url("/fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Vibes";
+  src: url("/fonts/Great_Vibes/GreatVibes-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("/fonts/Montserrat/static/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: "Josefin Sans Light";
+  src: url("/fonts/Josefin_Sans/static/JosefinSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Josefin Sans Regular";
+  src: url("/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Josefin Sans Bold 700";
+  src: url("/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf");
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: $header1;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: $text;
+}
+
+h2 {
+  font-size: $header2;
+}
+
+p {
+  font-weight: 100;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: $header3;
+}
+
+h4,
+h5 {
+  font-size: $header4;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Ruhl";
+  animation: opening 1s ease-in-out;
+  position: relative;
+}
+
+h1 {
+  font-family: "Vibes", sans-serif;
+  font-weight: 100;
+}
